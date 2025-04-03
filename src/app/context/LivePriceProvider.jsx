@@ -142,7 +142,7 @@ const LiveCryptoPrices = () => {
                     isFavorite ? "bg-red-500" : "bg-blue-500"
                   } text-white rounded`}
                 >
-                  {isFavorite ? "Saved" : "Favorite"}
+                  {isFavorite ? "Remove" : "Favorite"}
                 </button>
               </div>
             );
