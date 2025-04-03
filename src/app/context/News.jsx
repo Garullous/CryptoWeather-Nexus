@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const apiKey = process.env.NEXT_PUBLIC_NEWS_API_KEY;
+// const apiKey = process.env.NEXT_PUBLIC_NEWS_API_KEY;
 
 function DisplayNews() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://newsapi.org/v2/everything?q=cryptocurrency&apiKey=${apiKey}`)
+        axios.get(`https://newsapi.org/v2/everything?q=cryptocurrency&apiKey=296e34ae0afe4397b4f658e0fc8994c6`)
             .then((response) => {
                 setData(response.data.articles);
                 console.log(response.data.articles);
