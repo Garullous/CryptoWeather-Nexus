@@ -101,7 +101,7 @@ const LiveCryptoPrices = () => {
         "⚠️ WebSocket Closed:",
         event.reason || "No reason provided"
       );
-      setWsError("WebSocket disconnected");
+      setWsError("WebSocket disconnected, Refresh the page till it works!!");
     };
 
     return () => {
